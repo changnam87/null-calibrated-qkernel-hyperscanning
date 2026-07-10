@@ -50,6 +50,9 @@ def validate_input(df: pd.DataFrame) -> None:
 
 
 def make_benchmark_table(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    df["label"] = pd.to_numeric(df["label"], errors="raise").astype(int)
+
     out = df[[
         "obs_id",
         "dataset",
@@ -64,7 +67,7 @@ def make_benchmark_table(df: pd.DataFrame) -> pd.DataFrame:
         "K",
     ]].copy()
 
-    out["source_type"] = out["label"].map({1: "real", 0: "null"})
+    out["source_type"] = out["label"].apply(lambda x: "real" if int(x) == 1 else "null_generated")
     out["split_group"] = out["group_id"].astype(str)
 
     # Simple paired ID based on group/session/trial/dyad when available.
