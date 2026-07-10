@@ -1,0 +1,3 @@
+split_id,repeat_id,fold_id,dataset,null_task,feature_set,K,model,balanced_accuracy,auc,f1,sensitivity,specificity,kernel_alignment,separability_index,K_RR,K_NN,K_RN
+fold01,1,1,demo_primary,time_shift,raw_topk,6,qkernel_zz,0.6666666666666667,0.6666666666666667,0.6,,,0.2821548401173137,0.16342536088859455,0.1807546590416669,0.1734006829518774,0.0136523101081776
+fold02,1,2,demo_primary,time_shift,raw_topk,6,qkernel_zz,0.5,0.41666666666666674,0.5,,,0.2897577576831356,0.16824842786319133,0.17789244458284204,0.1876849216713607,0.014540255263910026
