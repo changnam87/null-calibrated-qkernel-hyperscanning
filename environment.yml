@@ -1,0 +1,20 @@
+name: qkernel-hyperscanning
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - jupyterlab
+  - ipykernel
+  - pytest
+  - pip:
+      - qiskit
+      - qiskit-aer
+      - qiskit-machine-learning
