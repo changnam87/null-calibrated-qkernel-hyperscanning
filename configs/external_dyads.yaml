@@ -1,0 +1,35 @@
+dataset:
+  name: external_dyads
+  type: dyadic_eeg_hyperscanning
+  description: External dyadic collaboration/competition EEG dataset
+  group_column: dyad_id
+  split_group_column: dyad_id
+
+synchrony:
+  metrics:
+    - plv
+    - coherence
+  combine_metrics: true
+  combined_score: abs_delta_plv_plus_abs_delta_coherence
+
+features:
+  main_k_values: [4, 6, 8]
+  feature_sets:
+    - raw_topk
+    - null_sensitive
+
+null_models:
+  main:
+    - time_shift
+    - partner_shuffle
+
+cross_validation:
+  method: group_kfold
+  n_splits: 5
+  repeats: 1
+  random_seed: 20260710
+
+outputs:
+  feature_dir: data/features
+  split_dir: data/splits
+  result_dir: results/external

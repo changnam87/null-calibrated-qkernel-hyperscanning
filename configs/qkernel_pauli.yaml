@@ -1,0 +1,17 @@
+model:
+  name: qkernel_pauli
+  feature_map: PauliFeatureMap
+  paulis: ["Z", "ZZ"]
+  reps: 1
+  entanglement: linear
+
+scaling:
+  method: minmax
+  feature_range: [0, 3.141592653589793]
+
+backend:
+  mode: simulator
+  kernel: FidelityQuantumKernel
+  shots: null
+
+status: secondary

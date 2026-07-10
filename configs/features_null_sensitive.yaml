@@ -1,0 +1,9 @@
+feature_set:
+  name: null_sensitive
+  selection_rule: rank_by_real_minus_null_attenuation
+  candidate_scores:
+    - label_attenuation
+    - time_attenuation
+    - partner_attenuation
+  direction: descending
+  k_values: [4, 6, 8]

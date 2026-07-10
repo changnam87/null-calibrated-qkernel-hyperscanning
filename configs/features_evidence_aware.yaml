@@ -1,0 +1,6 @@
+feature_set:
+  name: evidence_aware
+  selection_rule: evidence_score_then_structured_neighborhood
+  primary_score_column: evidence_score
+  fallback_if_sparse: include_score1_and_same_window_band_dyad_neighbors
+  k_values: [4, 6, 8]

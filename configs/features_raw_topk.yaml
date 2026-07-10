@@ -1,0 +1,6 @@
+feature_set:
+  name: raw_topk
+  selection_rule: rank_by_raw_contrast
+  score_column: raw_contrast
+  direction: descending
+  k_values: [4, 6, 8]

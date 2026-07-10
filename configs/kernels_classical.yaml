@@ -1,0 +1,22 @@
+models:
+  linear_svm:
+    kernel: linear
+    class_weight: balanced
+
+  poly_svm:
+    kernel: poly
+    degree: 2
+    gamma: scale
+    class_weight: balanced
+
+  rbf_svm:
+    kernel: rbf
+    gamma: scale
+    class_weight: balanced
+
+scaling:
+  method: minmax
+  feature_range: [0, 3.141592653589793]
+
+comparison:
+  best_classical_rule: max_balanced_accuracy_within_split
