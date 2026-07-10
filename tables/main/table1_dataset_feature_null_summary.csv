@@ -1,0 +1,8 @@
+Component,Primary triadic dataset,External dyadic dataset
+Dataset,Triadic Prisoner's Dilemma EEG hyperscanning,Dyadic collaboration/competition EEG hyperscanning
+Interaction structure,11 triads,16 dyads
+Synchrony metrics,"PLV, coherence, combined contrast","PLV, coherence, combined contrast"
+Unit definition,window × band × dyad × edge,task/window × band × dyad × edge
+Null models,label permutation; time shift; partner shuffle,time shift; partner shuffle
+Feature sets,raw top-K; null-sensitive; evidence-aware,matched raw top-K; null-sensitive where feasible
+Main validation role,RQ1–RQ3 primary analysis,RQ3 framework-level transferability
