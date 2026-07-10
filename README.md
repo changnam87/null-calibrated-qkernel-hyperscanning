@@ -54,3 +54,33 @@ Raw EEG data are not stored in this repository. Where permitted, anonymized feat
 ## Status
 
 Repository structure initialized. Analysis code and reproducibility materials are under development.
+
+---
+
+## Demo Pipeline
+
+A minimal synthetic demo pipeline is provided to verify that the repository structure, classical kernels, quantum kernels, statistics, figures, and tables work end-to-end.
+
+Run:
+
+```bash
+bash scripts/run_demo_pipeline.sh
+```
+
+The demo data are synthetic and are used only for pipeline validation. They are not EEG data and should not be interpreted scientifically.
+
+---
+
+## Tests
+
+Run the test suite with:
+
+```bash
+pytest -q
+```
+
+---
+
+## Known Warnings
+
+Current Qiskit versions may produce deprecation warnings for `ZZFeatureMap` and `PauliFeatureMap`. These warnings do not affect the current demo pipeline but will be monitored as Qiskit transitions toward version 3.0.
