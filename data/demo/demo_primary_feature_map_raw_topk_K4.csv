@@ -1,0 +1,5 @@
+feature_name,feature_index,unit_id,dataset,window,band,dyad_label,edge_id,channel_i,channel_j,metric,selection_rule,selection_rank,selection_score
+f001,1,DEMO_U001,demo_primary,feedback,delta,pair23,E001,P2_CH1,P3_CH1,combined,raw_topk,1,1.0
+f002,2,DEMO_U002,demo_primary,feedback,theta,pair23,E002,P2_CH2,P3_CH2,combined,raw_topk,2,0.5
+f003,3,DEMO_U003,demo_primary,feedback,alpha,pair23,E003,P2_CH3,P3_CH3,combined,raw_topk,3,0.3333333333333333
+f004,4,DEMO_U004,demo_primary,feedback,beta,pair23,E004,P2_CH4,P3_CH4,combined,raw_topk,4,0.25
