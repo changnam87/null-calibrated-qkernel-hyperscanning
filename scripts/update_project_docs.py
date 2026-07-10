@@ -1,4 +1,10 @@
-# Paper Constitution
+#!/usr/bin/env python
+from pathlib import Path
+
+DOCS = Path("docs")
+DOCS.mkdir(exist_ok=True)
+
+paper_constitution = """# Paper Constitution
 
 ## Title
 
@@ -156,3 +162,8 @@ Dataset, feature, and null benchmark summary.
 ### Table II
 
 Main statistical comparison.
+"""
+
+(DOCS / "paper_constitution.md").write_text(paper_constitution)
+
+print("PASS: updated docs/paper_constitution.md")
